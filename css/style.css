@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit !important;
+  transition: 0.5s ease-in-out;
+}
+a:hover {
+  color: #f5564e !important;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h3 {
+  font-size: 2.4rem;
+}
+
+h4 {
+  font-size: 2rem;
+}
+
+.bg-primary {
+  background: #f5564e !important;
+}
+
+.section__title {
+  position: relative;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+}
+.section__title::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  width: 10rem;
+  height: 0.3rem;
+  background: #f5564e;
+}
+.section:nth-of-type(even) {
+  background: #e8e2db;
+}
+
+.section p span {
+  color: #f5564e;
+}
+
+ul li {
+  padding-left: 1rem;
+}
+ul li::marker {
+  font-family: var(--fa-style-family, "Font Awesome 6 Free");
+  font-weight: var(--fa-style, 900);
+  content: "\f00c";
+  color: #f5564e;
+}
+
+.introduction {
+  min-height: 80vh;
+  position: relative;
+  z-index: 1;
+  background: #1a3263;
+  color: #ffffff;
+  text-align: center;
+}
+.introduction::before {
+  position: absolute;
+  content: "";
+  inset: 0;
+  background: url("../imgs/hero.jpeg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 0.3;
+  z-index: -1;
+}
+
+/*# sourceMappingURL=style.css.map */
